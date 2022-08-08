@@ -772,7 +772,7 @@ if (!function_exists('get_images_path')) {
         $images = get_images($given_ids, $with_trashed);
         if (!$images->isEmpty()) {
             foreach ($images as $image) {
-                $paths[] = !is_null($image) ? $image->file_name : "";
+                $paths[] = !is_null($image) ? asset ("public/$image->file_name") : "";
             }
         }
 
