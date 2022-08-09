@@ -27,7 +27,7 @@ class ProductDetailCollection extends ResourceCollection
                         if ($photo_paths[$i] != "" ) {
                             $item = array();
                             $item['variant'] = "";
-                            $item['path'] = asset ("public/$photo_paths[$i]");
+                            $item['path'] = $photo_paths[$i];
                             $photos[]= $item;
                         }
 
